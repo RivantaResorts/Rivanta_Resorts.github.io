@@ -60,30 +60,45 @@ body {
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
 }
 
 .btn {
-  background: #000000;
+  background: #1e3032;
+  border: 1px solid #162426;
   color: #ffffff;
   text-decoration: none;
-  padding: 14px 20px;
-  border-radius: 10px;
+  padding: 14px 22px;
+  border-radius: 999px;
   font-size: 16px;
   letter-spacing: 1px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.btn span {
+.btn-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.btn img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.btn span.arrow {
   font-size: 18px;
 }
 
 .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+  box-shadow: 0 0 22px rgba(205,161,70,0.9);
 }
 
 /* RIGHT IMAGE */
@@ -91,7 +106,7 @@ body {
   width: 50%;
   background-image:
     linear-gradient(rgba(30,48,50,0.45), rgba(0,0,0,0.55)),
-    url("assets/resort.jpg");
+    url("https://images.unsplash.com/photo-1501117716987-c8e1ecb2103c");
   background-size: cover;
   background-position: center;
   animation: fadeIn 1s ease;
@@ -135,26 +150,46 @@ body {
   <div class="left">
     <div class="card">
 
-      <img src="assets/logo.png" class="logo" alt="Rivanta Resort Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_icon.svg"
+           class="logo"
+           alt="Rivanta Resort Logo">
 
-      <div class="text">RATE US AT</div>
+      <div class="text">Leave us a review, it will help us grow and better serve our customers like you.</div>
 
       <div class="buttons">
+
         <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJR-avknhdBDkRMRZ_x360K1o" target="_blank">
-          Google <span>→</span>
+          <div class="btn-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google">
+            Google
+          </div>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="btn" href="https://www.tripadvisor.in/UserReviewEdit-g2424731-d34079165-Rivanta_Resort-Kasol_Kullu_District_Himachal_Pradesh.html" target="_blank">
+          <div class="btn-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Tripadvisor_Logo.svg" alt="Tripadvisor">
+            Tripadvisor
+          </div>
+          <span class="arrow">→</span>
         </a>
 
         <a class="btn" href="#" target="_blank">
-          Tripadvisor <span>→</span>
+          <div class="btn-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            Instagram
+          </div>
+          <span class="arrow">→</span>
         </a>
 
         <a class="btn" href="#" target="_blank">
-          Instagram <span>→</span>
+          <div class="btn-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+            Facebook
+          </div>
+          <span class="arrow">→</span>
         </a>
 
-        <a class="btn" href="#" target="_blank">
-          Facebook <span>→</span>
-        </a>
       </div>
 
     </div>
