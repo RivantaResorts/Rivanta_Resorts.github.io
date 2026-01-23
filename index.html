@@ -185,11 +185,10 @@ stars.forEach((star, index) => {
 
     setTimeout(() => {
       if (rating >= 4) {
-        // Open Google Write Review page directly with review box
-        window.location.href =
-          "https://search.google.com/local/writereview?placeid=ChIJR-avknhdBDkRMRZ_x360K1o";
+        
+        window.location.href ="rating.html";
       } else {
-        // Go to feedback form for 1-3 stars
+        
         window.location.href = "feedback.html";
       }
     }, 400); // slight UX delay for better feedback
