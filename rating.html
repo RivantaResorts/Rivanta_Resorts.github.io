@@ -17,13 +17,11 @@ body {
   color: #ffffff;
 }
 
-/* MAIN LAYOUT */
 .container {
   display: flex;
   min-height: 100vh;
 }
 
-/* LEFT */
 .left {
   width: 50%;
   display: flex;
@@ -32,7 +30,6 @@ body {
   padding: 40px;
 }
 
-/* CARD */
 .card {
   background: #1e3032;
   border-radius: 18px;
@@ -49,14 +46,12 @@ body {
   margin-bottom: 30px;
 }
 
-/* TEXT */
 .text {
   font-size: 20px;
   letter-spacing: 2px;
   margin-bottom: 30px;
 }
 
-/* BUTTONS */
 .buttons {
   display: flex;
   flex-direction: column;
@@ -89,7 +84,6 @@ body {
 .btn img {
   width: 22px;
   height: 22px;
-  object-fit: contain;
 }
 
 .btn span.arrow {
@@ -101,18 +95,17 @@ body {
   box-shadow: 0 0 22px rgba(205,161,70,0.9);
 }
 
-/* RIGHT IMAGE */
+/* RIGHT IMAGE – LOCAL */
 .right {
   width: 50%;
   background-image:
     linear-gradient(rgba(30,48,50,0.45), rgba(0,0,0,0.55)),
-    url("https://images.unsplash.com/photo-1501117716987-c8e1ecb2103c");
+    url("assets/resort.jpg");
   background-size: cover;
   background-position: center;
   animation: fadeIn 1s ease;
 }
 
-/* ANIMATIONS */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(25px); }
   to { opacity: 1; transform: translateY(0); }
@@ -123,21 +116,10 @@ body {
   to { opacity: 1; }
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .right {
-    width: 100%;
-    height: 42vh;
-  }
-
-  .left {
-    width: 100%;
-    padding: 30px 20px;
-  }
+  .container { flex-direction: column; }
+  .right { width: 100%; height: 42vh; }
+  .left { width: 100%; padding: 30px 20px; }
 }
 </style>
 </head>
@@ -146,29 +128,29 @@ body {
 
 <div class="container">
 
-  <!-- LEFT -->
   <div class="left">
     <div class="card">
 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Hotel_icon.svg"
-           class="logo"
-           alt="Rivanta Resort Logo">
+      <!-- LOCAL LOGO -->
+      <img src="assets/logo.png" class="logo" alt="Rivanta Resort Logo">
 
-      <div class="text">Leave us a review, it will help us grow and better serve our customers like you.</div>
+      <div class="text">RATE US AT</div>
 
       <div class="buttons">
 
-        <a class="btn" href="https://search.google.com/local/writereview?placeid=ChIJR-avknhdBDkRMRZ_x360K1o" target="_blank">
+        <a class="btn"
+           href="https://search.google.com/local/writereview?placeid=ChIJR-avknhdBDkRMRZ_x360K1o"
+           target="_blank">
           <div class="btn-left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google">
+            <img src="https://cdn.simpleicons.org/google/ffffff" alt="Google">
             Google
           </div>
           <span class="arrow">→</span>
         </a>
 
-        <a class="btn" href="https://www.tripadvisor.in/UserReviewEdit-g2424731-d34079165-Rivanta_Resort-Kasol_Kullu_District_Himachal_Pradesh.html" target="_blank">
+        <a class="btn" href="#" target="_blank">
           <div class="btn-left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Tripadvisor_Logo.svg" alt="Tripadvisor">
+            <img src="https://cdn.simpleicons.org/tripadvisor/ffffff" alt="Tripadvisor">
             Tripadvisor
           </div>
           <span class="arrow">→</span>
@@ -176,7 +158,7 @@ body {
 
         <a class="btn" href="#" target="_blank">
           <div class="btn-left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram">
             Instagram
           </div>
           <span class="arrow">→</span>
@@ -184,7 +166,7 @@ body {
 
         <a class="btn" href="#" target="_blank">
           <div class="btn-left">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Facebook_icon.svg" alt="Facebook">
+            <img src="https://cdn.simpleicons.org/facebook/ffffff" alt="Facebook">
             Facebook
           </div>
           <span class="arrow">→</span>
@@ -195,7 +177,6 @@ body {
     </div>
   </div>
 
-  <!-- RIGHT -->
   <div class="right"></div>
 
 </div>
